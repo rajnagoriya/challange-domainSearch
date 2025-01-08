@@ -56,7 +56,7 @@ const DomainSearch: React.FC = () => {
     try {
       const response = await axios.get<ApiResponse>(`/api/domain?domain=${domainLower}`);
       setResult(response.data);
-      toast.success("Domain found successfully!");
+      // toast.success("Domain found successfully!");
     } catch (err: unknown) {
       if (axios.isAxiosError(err) && err.response?.data?.error) {
         toast.error(err.response.data.error);
@@ -91,7 +91,7 @@ const DomainSearch: React.FC = () => {
         </button>
       </div>
 
-      {result && !loading && !Error && (
+      {result && !loading &&  (
         <div className="mt-4">
           <DomainInfo
             data={{
