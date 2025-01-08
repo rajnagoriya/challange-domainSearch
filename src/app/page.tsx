@@ -1,9 +1,9 @@
 "use client"
 
-import Navbar from "@/components/Nav";
-import CartDrawer from "@/components/ui/cartDrawer";
+import Navbar from "@/app/components/Nav";
+import CartDrawer from "@/app/components/ui/cartDrawer";
 import { useState } from "react";
-import HomeHero from "@/components/homeHero";
+import HomeHero from "@/app/components/homeHero";
 
 export default function Home() {
   const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
